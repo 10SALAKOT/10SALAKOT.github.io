@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  height: 100vh;
+  background: black;
+
+}
+.click, .popup_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+}
+.click{
+  background: #000000;
+  color: #15f4ee;
+  font-size: 35px;
+  font-family: arial;
+  font-weight: 400;
+  border: 5px solid #15f4ee;
+  padding: 10px 15px;
+  text-transform: uppercase ;
+  letter-spacing: 15px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 100px;
+  transition: 1.5s;
+}
+.click:hover
+{
+  box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee,
+              0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+  text-shadow: 0 0 5px #15f4ee, 0 0 5px #15f4ee;
+}
+.popup_box{
+  width: 400px;
+  background: #000000;
+  text-align: center;
+  align-items: center;
+  padding: 40px;
+  border: 1px solid #000000;
+  box-shadow: 0px 5px 10px rgba(0,0,0,.2);
+  z-index: 9999;
+  display: none;
+}
+.popup_box i{
+  font-size: 60px;
+  color: #eb9447;
+  border: 5px solid #eb9447;
+  padding: 20px 40px;
+  border-radius: 50%;
+  margin: -10px 0 20px 0;
+}
+.popup_box h1{
+  font-size: 30px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.popup_box label{
+  font-size: 23px;
+  color: #ffffff;
+}
+.popup_box .btns{
+  margin: 40px 0 0 0;
+}
+.btns .btn1, .btns .btn2{
+  background: #999999;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #808080;
+  padding: 10px 13px;
+}
+.btns .btn2{
+  margin-left: 20px;
+  background: #ff3333;
+  border: 1px solid #cc0000;
+}
+.btns .btn1:hover{
+  transition: .5s;
+  background: #8c8c8c;
+}
+.btns .btn2:hover{
+  transition: .5s;
+  background: #e60000;
+}
